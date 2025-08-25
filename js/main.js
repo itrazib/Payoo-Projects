@@ -16,6 +16,15 @@ function getInnerText(id){
 function setInnerText(value){
    document.getElementById('amount').innerText = value;
 }
+function toggleFeature(id){
+    const forms = document.getElementsByClassName('form');
+    // console.log(forms);
+    for(const f of forms)
+    {
+        f.style.display = 'none';
+    }
+    return document.getElementById(id).style.display = 'block';
+}
 
 
 document.getElementById('add-money-btn').addEventListener('click', function(event){
@@ -60,10 +69,23 @@ document.getElementById('cash-out-btn').addEventListener('click', function(event
 
 // Trogling features
 document.getElementById('add-money').addEventListener('click', function(){
-    document.getElementById('cash-out-parent').style.display = 'none';
-    document.getElementById('Add-money-parent').style.display = 'block';
+    toggleFeature('Add-money-parent')
+    
 })
 document.getElementById('cash-out').addEventListener('click', function(){
-    document.getElementById('Add-money-parent').style.display = 'none';
-     document.getElementById('cash-out-parent').style.display = 'block';
-})
+    toggleFeature('cash-out-parent')
+    
+    })
+document.getElementById('transfer-money').addEventListener('click', function(){
+    toggleFeature('transfer-money-parent')
+  
+    })
+document.getElementById('get-bonus').addEventListener('click', function(){
+   
+  toggleFeature('get-bonus-parent')
+    })
+document.getElementById('pay-bill').addEventListener('click', function(){
+     
+  toggleFeature('pay-bill-parent')
+    })
+     
