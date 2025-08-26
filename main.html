@@ -23,7 +23,7 @@
             </div>
          </div>
          <div>
-            <button class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700"></i>Logout</button>
+            <button id="Logout-btn" class="btn text-[#08080880]"><i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700"></i>Logout</button>
          </div>
     </div>
     <div class="my-6 mx-3">
@@ -31,29 +31,29 @@
         <p class="text-[#08080880]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
     </div>
     <div class="grid grid-cols-3 gap-2 mx-3">
-        <div id="add-money" class=" text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300">
+        <div id="add-money" class="form-btn text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/wallet1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Add Money</p>
+            <p class=" mt-2">Add Money</p>
         </div>
-         <div id="cash-out" class=" text-center py-[20px] shadow-lg rounded-[12px] border-1 border-gray-300">
+         <div id="cash-out" class="form-btn text-center py-[20px] shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/send1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Cashout</p>
+            <p class=" mt-2">Cashout</p>
         </div>
-         <div id="transfer-money" class=" text-center py-[20px] shadow-lg rounded-[12px] border-1 border-gray-300">
+         <div id="transfer-money" class="form-btn text-center py-[20px] shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/money1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Transfer Money</p>
+            <p class=" mt-2">Transfer Money</p>
         </div>
-         <div id="get-bonus" class=" text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300">
+         <div id="get-bonus" class="form-btn text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/bonus1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Get Bonus</p>
+            <p class=" mt-2">Get Bonus</p>
         </div>
-         <div id="pay-bill" class=" text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300">
+         <div id="pay-bill" class="form-btn text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/purse1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Pay Bill</p>
+            <p class=" mt-2">Pay Bill</p>
         </div>
-         <div class=" text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300">
+         <div id="transaction" class="form-btn text-center py-[20px]  shadow-lg rounded-[12px] border-1 border-gray-300 text-[#08080890]">
             <img src="./assets/transaction1.png" class="mx-auto mt-2" alt="">
-            <p class="text-[#08080890] mt-2">Transaction</p>
+            <p class="mt-2">Transaction</p>
         </div>
     </div>
    </div>
@@ -171,6 +171,16 @@
              <button id="add-money-btn" class="btn bg-[#0874F2] input mt-3 rounded-[24px] text-white w-full">Pay Now</button>
         </div>
       </form>
+    </div>
+      <div id="transaction-parent" class="mt-3 form" style="display: none;">
+      <div class="flex justify-between items-center">
+        <h2 class="font-bold ml-5">Transactions</h2>
+        <p>View All</p>
+      </div>
+      <div id="transaction-container">
+
+      </div>
+       
     </div>
      
    </div>
